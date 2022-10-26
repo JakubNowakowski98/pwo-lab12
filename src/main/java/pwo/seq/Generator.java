@@ -3,7 +3,7 @@ package pwo.seq;
 import java.math.BigDecimal;
 import pwo.utils.SequenceGenerator;
 
-public class Generator implements SequenceGenerator {
+abstract class Generator implements SequenceGenerator {
 
     protected int lastIndex = 0;
     protected BigDecimal current = null,
@@ -28,10 +28,5 @@ public class Generator implements SequenceGenerator {
             nextTerm();
         }
         return current;
-    }
-
-    @Override
-    public BigDecimal nextTerm() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

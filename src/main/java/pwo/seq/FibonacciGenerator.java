@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 public class FibonacciGenerator extends Generator {
 
     public FibonacciGenerator() {
+
         current = new BigDecimal(0);
         f_1 = new BigDecimal(1);
         f_2 = new BigDecimal(0);
@@ -16,6 +17,7 @@ public class FibonacciGenerator extends Generator {
         current = new BigDecimal(0);
         f_1 = new BigDecimal(1);
         f_2 = new BigDecimal(0);
+
     }
 
     @Override
@@ -34,4 +36,5 @@ public class FibonacciGenerator extends Generator {
         lastIndex++;
         return current;
     }
+
 }

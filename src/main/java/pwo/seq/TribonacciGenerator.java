@@ -3,6 +3,7 @@ package pwo.seq;
 import java.math.BigDecimal;
 
 public class TribonacciGenerator extends FibonacciGenerator {
+
     public TribonacciGenerator() {
         f_3 = new BigDecimal(0);
     }
@@ -27,5 +28,5 @@ public class TribonacciGenerator extends FibonacciGenerator {
         }
         lastIndex++;
         return current;
- }
+    }
 }
